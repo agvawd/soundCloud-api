@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="sounder">
+<head>
+	<title></title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<ng-view></ng-view>
+<!-- 	<form class="search">
+		<input class="input form-control" ng-model="searchText" placeholder="Search for track by username">
+		<button class="button" ng-click="getUser()">Search</button>
+	</form>
+
+	<div ng-bind-html="iFrame"></div>
+
+     <div class="row">
+      <div ng-repeat="song in userData">
+        <div class="col-md-1">
+          <img src="" ng-click="play(song.permalink_url)" ng-if="!song.artwork_url">
+          <img ng-src="{{song.artwork_url}}" ng-click="play(song.permalink_url)" ng-if="song.artwork_url">
+        </div>
+      </div>
+     </div> -->
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.13/angular.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular-route.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="http://connect.soundcloud.com/sdk.js"></script>
+<script src="app.js"></script>
+<script src="mainController.js"></script>
+<script src="soundService.js"></script>
+<script src="js/tracks/tracksCtrl.js"></script>
+<script src="js/users/usersCtrl.js"></script>
+</body>
+</html>

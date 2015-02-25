@@ -1,0 +1,15 @@
+	<form class="search">
+		<input class="input form-control" ng-model="searchText" placeholder="Search for track by username">
+		<button class="button" ng-click="getTracks()">Search</button>
+	</form>
+
+	<div ng-bind-html="iFrame"></div>
+
+   <div class="row">
+    <div><a href="/#/users/{{tracks[0].user_id}}">{{tracks[0].user.username}}</div>
+    <div ng-repeat="song in tracks">
+      <div class="col-md-1">
+        <img ng-src="{{song.artwork_url}}" ng-click="play(song.permalink_url)" ng-if="song.artwork_url">
+      </div>
+    </div>
+   </div>
